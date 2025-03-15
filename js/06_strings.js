@@ -102,7 +102,3 @@ console.log(turkishTexts.toLocaleUpperCase("tr"));  // "İSTANBUL" (Turkish-spec
 console.log("HELLO".toLowerCase()) // "hello"
 console.log("hello".toUpperCase()) // "hello"
  
-
-
-
-

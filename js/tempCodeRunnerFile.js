@@ -1,7 +1,0 @@
-console.log(newDate.getDate())
-console.log(newDate.getDay())
-console.log(newDate.getFullYear())
-console.log(newDate.getHours())
-console.log(newDate.getMilliseconds())
-console.log(newDate.getTimezoneOffset())
-console.log(newDate.get())
