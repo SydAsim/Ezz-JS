@@ -34,7 +34,6 @@ console.log(newDate.getTimezoneOffset())
 console.log(newDate.get())
 
 // if you want to define more the toLocaleString then u can do it 
-
 console.log(newDate.toLocaleString('default', {
     weekday: 'long'
 }));

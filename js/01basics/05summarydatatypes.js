@@ -52,13 +52,13 @@ console.log(typeof variable_undefined);//havenot assigned any value to it
 // stack and Heap Memeory allocation
 // stack(used by all Primitive dt)  Heap(used by all Non-Primitive dt)
 
-// //Stack Exapmle
-// let user1 = "syed Asim Bacha"
-// let user2 = user1
-// user2 = "syed awais Ali Shah"
-// console.log(user1)
-// console.log(user2) //so changes occurs in the copy of the user1 and the orginal user1 
-// //reamains the same 
+//Stack Exapmle
+let user1 = "syed Asim Bacha"
+let user2 = user1
+user2 = "syed awais Ali Shah"
+console.log(user1)
+console.log(user2) //so changes occurs in the copy of the user1 and the orginal user1 
+//reamains the same 
 
 let userdetails1 = {
     username : "Ahmed",
