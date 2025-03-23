@@ -31,8 +31,8 @@ const newarr = arr.join() //chnages the types into string
 // console.log( newarr)
 // console.log( typeof newarr)
 
-// Slice and Splice 
 
+// Slice and Splice 
 const arr01 = arr.slice(1 ,3)
 // console.log("A",arr)
 // console.log (arr01)
@@ -65,7 +65,7 @@ const another_arr = [1 ,2 ,3 ,4 ,[5,6,7],8,9 ,[10 ,20 ,30 ,[40 , 50 ,60,70] ,99 
 console.log(another_arr.flat(2))
 
 // console.log(Array.isArray("asim"))
-// console.log(Array.from("asim"))
+console.log(Array.from("asim"))
 
 // console.log(Array.from({name:"asim"})) // it always return an empty array casue it do not know 
 // kis ko convert karo key ko ya value ko 
@@ -73,4 +73,4 @@ console.log(another_arr.flat(2))
 let a1 = 100 
 let a2 = 200 
 let a3 = 300 
-// console.log(Array.of(a1,a2 ,a3));
+console.log(Array.of(a1,a2 ,a3));
