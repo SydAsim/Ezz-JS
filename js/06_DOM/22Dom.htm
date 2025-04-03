@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM</title>
+</head>
+<style>
+    .bg-black{
+        background-color: #212121;
+        color: #fff;
+    }
+</style>
+<body  class="bg-black">
+    <div>
+        <h1 id="title" class="heading1">Heading of the page
+            <span style="display: none">Text of the span</span>
+        </h1>
+        <h2>hello world!</h2>
+        <h2>hello world!</h2>
+        <h2>hello world!</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing .</p>
+        <input type="Password">
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
+        </ul>
+    </div>
+    
+
+    
+</body>
+</html>
+
+
+
+
+<!-- 
+
+HTML File Structure:
+A website is essentially wrapped in an HTML file that contains two main sections:
+
+Head: Includes metadata, links to stylesheets, scripts, etc.
+
+Body: Contains the visible content of the webpage (e.g., headings, paragraphs, divs, images).
+
+DOM Representation:
+
+When the browser loads an HTML file, it parses the HTML and creates a DOM tree, which is a structured, tree-like representation of the document.
+
+Each element (like <div>, <h1>, etc.), attribute, and text in the HTML becomes a node in the DOM tree.
+
+Browser Parsing and Rendering:
+
+The browser uses the DOM to understand, parse, and render the content of the website efficiently.
+
+DOM Manipulation:
+
+Using JavaScript, developers can interact with and manipulate the DOM in real-time.
+
+Examples include:
+
+Changing the text of an element (innerHTML).
+
+Modifying attributes (like src or href).
+
+Adding or removing elements dynamically.
+
+Your understanding is spot-on, and DOM manipulation is a core concept in web development, enabling interactive and dynamic web pages. Let me know if you'd like examples or deeper insights into specific parts!
+ 
+
+
+ More about how to select text in DOM 
+ inner html :
+  also give the html code define with the element like this
+ 'Heading of the page\n <span style="display: none">Text of the span</span>\n 
+
+textContent : it gives all the conetent of a specific element including visibity none walay bhi
+
+innerText : only the visibale text
+
+
+NodeList vs Array vs HTMLCollection
+These three are different types of collections used in JavaScript when working with DOM elements. Here's a breakdown:
+
+1. NodeList
+A NodeList is a collection of nodes (elements, text nodes, comments, etc.).
+
+It can be static or live:
+
+querySelectorAll() → Returns a static NodeList (doesn't update if the DOM changes).
+
+childNodes → Returns a live NodeList (updates when the DOM changes).
+
+It's array-like, meaning it has an index (nodelist[0]), but it doesn’t have full array methods like .map() or .filter() (unless converted using Array.from(nodelist)).
+
+
+let nodeList = document.querySelectorAll('p'); // Static NodeList
+console.log(nodeList.length); // Number of <p> elements
+
+    
+2. Array
+A true JavaScript array with all built-in array methods (map(), filter(), forEach(), etc.).
+
+Unlike NodeList and HTMLCollection, arrays can store anything (numbers, strings, objects, etc.).
+
+Can be created manually or converted from NodeList/HTMLCollection using Array.from().
+
+js
+Copy
+Edit
+let arr = [1, 2, 3, 4]; 
+console.log(arr.map(num => num * 2)); // [2, 4, 6, 8]
+
+
+3. HTMLCollection
+A collection of only element nodes (no text nodes or comments).
+
+It’s live, meaning changes in the DOM reflect immediately.
+
+Unlike NodeList, it doesn’t support forEach directly.
+
+You can convert it to an array using Array.from() or the spread operator [...htmlCollection].
+
+js
+Copy
+Edit
+let htmlCollection = document.getElementsByTagName('div'); // Live collection
+console.log(htmlCollection.length); // Number of <div> elements
+-->

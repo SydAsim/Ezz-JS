@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: white;" >
+    <script>
+        const div = document.createElement('div')
+        console.log(div);
+        div.className = "main"
+        div.id = Math.round(Math.random() * 10 + 1 )
+        div.setAttribute("title" ,"navbar")
+        div.style.backgroundColor = 'green'
+        div.style.padding = '10px'
+        //pehlay values ko laita  hain actual jagaha say  aur phir changes karta hain
+        //yani innerText actual div ko manipulate karta hain
+        // div.innerText='HEllo Welcome to chai aur code'
+ 
+        // and here we are making our own text through variable 
+        const mytext = document.createTextNode('This is the text we have created through createTextNode')
+        div.appendChild(mytext)
+        
+        // now just add the the body
+        document.body.appendChild(div)
+
+
+        // See now once this div is made we can just add it to the function 
+        // and add arguments to the function and take this bg-color and text etc as arg
+        
+    </script>
+</body>
+</html>
