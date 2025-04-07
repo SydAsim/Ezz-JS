@@ -64,10 +64,11 @@ const new_heros = [...marvel_heros  , ...dc_heros]
 const another_arr = [1 ,2 ,3 ,4 ,[5,6,7],8,9 ,[10 ,20 ,30 ,[40 , 50 ,60,70] ,99 ,22], 11]
 console.log(another_arr.flat(2))
 
+// form keyword
 // console.log(Array.isArray("asim"))
 console.log(Array.from("asim"))
 
-// console.log(Array.from({name:"asim"})) // it always return an empty array casue it do not know 
+console.log(Array.from({name:"asim"})) // it always return an empty array casue it do not know 
 // kis ko convert karo key ko ya value ko 
 
 let a1 = 100 

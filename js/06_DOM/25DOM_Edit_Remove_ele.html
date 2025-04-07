@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM -Edit and remove elements</title>
+</head>
+<body style="background-color: black; color: white;  ">
+
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    function addlanguage(langName) {
+        // create new element called id 
+        const li = document.createElement('li')
+        
+        //li main innerHtml kay zaryie us variable ko dal do 
+        li.innerHTML = `${langName}`
+        // Select the the class or parent you want to add target and appendchild 
+        document.querySelector('.language').appendChild(li)
+        
+    }
+    addlanguage('python')
+    addlanguage('Ruby')
+    // so the above method is not much Optimized cause we are travesing the whole tree
+    // of Node and the then adding at the END new li imagine adding  li at 100000 number in ul
+
+
+    // OPtimized ftn
+    function addlangOpti(LangName){
+      const li =  document.createElement('li')
+    // createTextNode directly assigns the value
+     li.appendChild(document.createTextNode(LangName));
+     document.querySelector('.language').appendChild(li)
+    }
+    addlangOpti('Golang')
+
+    // How to edit element 
+    const secondlang = document.querySelector("li:nth-child(2)")
+    // console.log(secondlang)
+    // one method is innerHTML 
+    // secondlang.innerHTML = "C++"
+    // other is by creating newelement
+    const newli = document.createElement('li')
+    newli.textContent = 'C++'
+    secondlang.replaceWith(newli)
+
+    //Edit
+    const firstlang = document.querySelector('li:first-child')
+    firstlang.outerHTML=('<li>Typescript</li>')
+     
+    
+    // Remove 
+    const lastlang = document.querySelector('li:last-child')
+    lastlang.remove()
+
+
+
+
+
+</script>
+
+</html>

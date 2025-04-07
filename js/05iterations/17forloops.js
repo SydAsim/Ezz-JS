@@ -29,7 +29,6 @@ for (let index = 0; index < myArray.length; index++) {
 
 
 let newarray = ["asim" , "ali" ,"awais"]
-
 // console.log(newarray.length);
 
 for(let i = 0 ; i < newarray.length; i++) {

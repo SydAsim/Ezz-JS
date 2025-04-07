@@ -10,21 +10,21 @@ const values = coding.forEach( (item)=>{
 
 const arr  = [1,2,3,4,5,6,7,8,9,10]
 
-// const greaternumber = arr.filter( (num)=> (num > 4))
+const greaternumber = arr.filter( (num)=> (num > 4))
 // or we can also use curely braces 
 // const greaternumber = arr.filter( (num)=> {
 //     return num > 4;
 // })
-// console.log(greaternumber)
+console.log(greaternumber)
 
 
 // using for each loop 
-let newarr = []
-arr.forEach( (myarr)=> {
-    if (myarr >4){
-        newarr.push(myarr)
-    }
-})
+// let newarr = []
+// arr.forEach( (myarr)=> {
+//     if (myarr >4){
+//         newarr.push(myarr)
+//     }
+// })
 // console.log(newarr);
 
 
@@ -54,7 +54,7 @@ mybook = books.filter((bk) => { return bk.publish > 1995})
 //Now maps method 
 let num = [1,2,3,4,5,6,7,8,9,10]
 let a = num.map( (it) => {return it + 10})
-// console.log(a);
+console.log(a);
 
 // now chaining concept 
 let mynum = num
@@ -67,6 +67,7 @@ let mynum = num
 
 
 // Now we will study reducer method usied  in shoping carts
+// which intially take the value as 0 like the intial sum as 0 
 let a1 = [1,2,3,4,5]
 let total = a1.reduce(function (acc ,curval) {
     // console.log(`acc value is ${acc} and the total value is ${curval}`);

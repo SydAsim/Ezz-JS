@@ -6,6 +6,9 @@
 // forEach calls the callbackfn function one time for each element in the array.
 
 
+// acha function aur arrow function main variables kay name kuch bhihosakatahy 
+// hain jis kay through array ko access kia jata hain 
+
 const coding = ["python" ,"Js", "cpp" ,"Ruby" ,"Go"]
 coding.forEach(function (val) {
     // console.log(val);
@@ -17,15 +20,15 @@ coding.forEach(function (val) {
 // })
 
 function printme(na) {
-    console.log(na)
+    // console.log(na)
 }
 // we can also pass the function like this just pass the name reference of
 // the function
-// coding.forEach ( printme)
+coding.forEach ( printme)
 
 // is kay ilawa is kay pass item ,ind,aur poray array kay access bhi hoata hain  
 coding.forEach ( (itm ,ind ,arr)=> {
-    // console.log(itm , ind , arr);  
+    console.log(itm , ind , arr);  
 })
 
 
@@ -47,5 +50,5 @@ let mynewarr = [
 // see just by declaring variable name item or any other name
 // we can access all the properties of object in 1 loop
 mynewarr.forEach(  (item)=> { 
-    console.log(item.Langname);
+    // console.log(item.Langname);
 }  )

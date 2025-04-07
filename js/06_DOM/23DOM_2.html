@@ -18,30 +18,30 @@
 </body>
 <Script>
     const week = document.querySelector('.weeks')
-    // console.log(week)
+    console.log(week)
     // //week.children it will show Html collection
-    // console.log(week.children);
-    // console.log(week.children[0].innerHTML);
+    console.log(week.children);
+    console.log(week.children[0].innerHTML);
 
     // we can just normally loop on HTML collection
-    // for (let i = 0; i < week.children.length; i++) {
-    //     console.log(week.children[i].innerHTML)
-    // }
+    for (let i = 0; i < week.children.length; i++) {
+        console.log(week.children[i].innerHTML)
+    }
     
     week.children[1].style.color = 'blue'
     // targets first element of the parent 
-    // console.log(week.firstElementChild);
-    // console.log(week.lastElementChild);
+    console.log(week.firstElementChild);
+    console.log(week.lastElementChild);
 
     // we can also do it by querySelectorAll
     let myday = document.querySelector('.day')
-    // console.log(myday);
-    // console.log(myday.parentElement);
-    // console.log(myday.nextElementSibling);
+    console.log(myday);
+    console.log(myday.parentElement);
+    console.log(myday.nextElementSibling);
 
     // Nodes here we can see html file 
     // Tree structure
-    console.log("NODES:" ,week.childNodes);
+    // console.log("NODES:" ,week.childNodes);
     
 
     

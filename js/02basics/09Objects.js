@@ -118,9 +118,10 @@ const course =  {
     email:"random@gmail.com" ,
     instructorname: "asim"
 }
+
 // console.log(course.instructorname);
-const {instructorname : teacher} = course
-// console.log(instructorname);
+const { instructorname : teacher} = course
+// console.log(instructorname); //ReferenceError: instructorname is not defined
 console.log(teacher);
 
 // this is called de structuring same concept used in React 
@@ -128,6 +129,8 @@ console.log(teacher);
 
 // }
 // navbar (company = "asim")
+
+// APPLICATION PROGRAMMING INTERFACE
 
 // Api concept just like we order somthing in resturant 
 // burgur kaha say laiga thats not our tension

@@ -16,7 +16,7 @@ function addtwonumbers(number1 , number2){
     console.log(number1 + number2)
 }
 // addtwonumbers(20, 19)
-// let result  = addtwonumbers (12 ,21)
+// let resut  = addtwonumbers (12 ,21)
 // console.log(result); // undefined cause we are not returnining anything
 // we are just printing the parameters in added form so inorder to store 
 // value in variable you have to return something in the function
