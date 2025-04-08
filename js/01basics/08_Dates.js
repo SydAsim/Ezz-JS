@@ -1,6 +1,7 @@
 // DATES IN JAVA SCRIPT 
 
 //creating and obj and instance of that obj 
+// Basically Date() it self is an object in js just like Map()
 let myDate = new Date() 
 console.log(myDate);
 console.log(myDate.toString());
