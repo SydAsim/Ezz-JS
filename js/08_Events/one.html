@@ -1,57 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>html Events </title>
 </head>
+
 <body style="background-color: #414141; color: aliceblue;">
     <h2>Amazing image</h2>
-    <div >
+    <div>
         <ul id="images">
-            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
-            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
-            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
-            <li><img width="200px" id="owl"  src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
-            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="photoshop"
+                    src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt="photoshop"></li>
+            <li><img width="200px" id="japan"
+                    src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt=""></li>
+            <li><img width="200px" id="river"
+                    src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt=""></li>
+            <li><img width="200px" id="owl"
+                    src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt=""></li>
+            <li><img width="200px" id="prayer"
+                    src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt=""></li>
             <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
         </ul>
-   </div>
+    </div>
 </body>
 
 <script>
-// document.getElementById('owl').onclick = function(){
-//     alert("Bird Owl")
-// }
-// THis approach is also good But it gives less features as compare to 
-// addEventListener it can listen to alot of events keyboards keys 
-// mouse click ,drag and drop ,etc 
-// other ways to listen to an Events 
-// J-Query = on 
-// attachEvent()
+    // document.getElementById('owl').onclick = function(){
+    //     alert("Bird Owl")
+    // }
+    // THis approach is also good But it gives less features as compare to 
+    // addEventListener it can listen to alot of events keyboards keys 
+    // mouse click ,drag and drop ,etc 
+    // other ways to listen to an Events 
+    // J-Query = on 
+    // attachEvent()
     // interveiw question aik aisa image bano jaha pay main click karo thou
     // mojay time stamp dekhay 
     // aik aur question jaha par buhut saray div ho aur jahan par client 
     // click karay waha par circle create ho 
-    
-    // Click event to look for 
-    // Types , timestamp , defaultprevented()
-    // target ,toElement , srcElement , CurrentTarget 
-    //  for interview , ClientX ,  Clienty , Screenx , screenY
-    // altkey , ctrlKey , SHiftkey , KeyCOde  
 
-// document.getElementById('images').addEventListener('click',function(e){
 
-//     console.log("Clicked inside the ul")
 
-// } ,false )  
-// document.getElementById('owl').addEventListener('click',function(e){
+    // document.getElementById('images').addEventListener('click',function(e){
 
-//     console.log("Clicked inside the owl")
-//     e.stopPropagation()
+    //     console.log("Clicked inside the ul")
 
-// } ,false  ) 
- 
+    // } ,false )  
+    // document.getElementById('owl').addEventListener('click',function(e){
+
+    //     console.log("Clicked inside the owl")
+    //     e.stopPropagation()
+
+    // } ,false  ) 
+
     // e is an  Event object  and has many objects in it in which contain 
     // Further more events  like browser kay events and enviroment kay events
     // like mouse nay kaha click kia konsi movement thi mouse ke  
@@ -66,70 +74,219 @@
     // if we make it true like this 
     // then pehlay ul capture hoga then li 
 
-// issi tarah Preventdefault kay bhi method hain jo kay us elemnt kay 
-// action ko prevent kar daitha hain 
-// defaultPrevented() method forms kay automatic submission ko rokta hain
+    // issi tarah Preventdefault kay bhi method hain jo kay us elemnt kay 
+    // action ko prevent kar daitha hain 
 
-// document.getElementById('google').addEventListener('click', function(e){
-//     e.preventDefault()
-//     e.stopPropagation()
-//     console.log("google clicked "); 
-// })
+    // defaultPrevented() method forms kay automatic submission ko rokta hain
 
-
-// funtion or  method to  remove or images when clicked 
-// Event spell over 
-// document.querySelector('#images').addEventListener('click',function(e){
-//     console.log(e.target.parentNode.tagName);
-
-//     if (e.target.tagName === 'IMG'){
-//     //e.target.parentNode retrieves the parent <li> that wraps the <img>.
-//     let  removeit = e.target.parentNode
-//     removeit.remove() //method  1
-
-//     }
-// removeit.parentNode.removeChild(removeit) //method  2
-// })
+    // document.getElementById('google').addEventListener('click', function(e){
+    //     e.preventDefault()
+    //     e.stopPropagation()
+    //     console.log("google clicked "); 
+    // })
 
 
+    // funtion or  method to  remove or images when clicked 
+    // Event spell over 
+    // document.querySelector('#images').addEventListener('click',function(e){
+    //     console.log(e.target.parentNode.tagName);
+
+    //     if (e.target.tagName === 'IMG'){
+    //     //e.target.parentNode retrieves the parent <li> that wraps the <img>.
+    //     let  removeit = e.target.parentNode
+    //     removeit.remove() //method  1
+
+    //     }
+    // removeit.parentNode.removeChild(removeit) //method  2
+    // })
 
 
-// document.querySelector('#images').addEventListener('click', function () {
-//     let div = document.createElement('div');
-//     div.style.borderRadius = '50%'; // Corrected for a circle
-//     div.style.width = '50px'; // Added width for the circle
-//     div.style.height = '50px'; // Added height for the circle
-//     div.style.backgroundColor = 'red'; // Changed to backgroundColor
-//     div.style.position = 'absolute'; // Added positioning
-//     div.style.top = `${event.clientY}px`; // Place the circle at click Y-coordinate
-//     div.style.left = `${event.clientX}px`; // Place the circle at click X-coordinate
-
-//     document.body.appendChild(div); // Append the circle to the body
-// }, false);
 
 
-// Interview POV
-document.querySelector('#images').addEventListener('click', function () {
-    let mydate = new Date();
-    let timeElement = document.createElement('div'); // Create a new div to display the time
-    timeElement.textContent = mydate.toLocaleTimeString();
-    timeElement.style.position = 'absolute'; // Position it dynamically
-    timeElement.style.top = `${event.clientY}px`; // Y-coordinate of the click
-    timeElement.style.left = `${event.clientX}px`; // X-coordinate of the click
-    timeElement.style.backgroundColor = 'rgba(0, 0, 0, 0.5)'; // Add some styling
-    timeElement.style.color = 'white';
-    timeElement.style.padding = '5px';
-    timeElement.style.borderRadius = '5px';
+    // document.querySelector('#images').addEventListener('click', function () {
+    //     let div = document.createElement('div');
+    //     div.style.borderRadius = '50%'; // Corrected for a circle
+    //     div.style.width = '50px'; // Added width for the circle
+    //     div.style.height = '50px'; // Added height for the circle
+    //     div.style.backgroundColor = 'red'; // Changed to backgroundColor
+    //     div.style.position = 'absolute'; // Added positioning
+    //     div.style.top = `${event.clientY}px`; // Place the circle at click Y-coordinate
+    //     div.style.left = `${event.clientX}px`; // Place the circle at click X-coordinate
 
-    document.body.appendChild(timeElement);
+    //     document.body.appendChild(div); // Append the circle to the body
+    // }, false);
 
-    // Optional: Remove the time display after 3 seconds
-    setTimeout(() => {
-        timeElement.remove();
-    }, 3000);
+
+    // Interview POV
+    document.querySelector('#images').addEventListener('click', function () {
+        let mydate = new Date();
+        let timeElement = document.createElement('div'); // Create a new div to display the time
+        timeElement.textContent = mydate.toLocaleTimeString();
+        timeElement.style.position = 'absolute'; // Position it dynamically
+        timeElement.style.top = `${event.clientY}px`; // Y-coordinate of the click
+        timeElement.style.left = `${event.clientX}px`; // X-coordinate of the click
+        timeElement.style.backgroundColor = 'rgba(0, 0, 0, 0.5)'; // Add some styling
+        timeElement.style.color = 'white';
+        timeElement.style.padding = '5px';
+        timeElement.style.borderRadius = '5px';
+
+        document.body.appendChild(timeElement);
+
+        // Optional: Remove the time display after 3 seconds
+        setTimeout(() => {
+            timeElement.remove();
+        }, 3000);
+    });
+
+    document.querySelector("#images").addEventListener("click", (event) => {
+    console.log("Target:", event.target); // Logs the clicked element
+    console.log("CurrentTarget:", event.currentTarget); // Always logs the #parent element
+});
+document.addEventListener('#images', (event) => {
+    console.log("Mouse X (viewport):", event.clientX);
 });
 
 
-
 </script>
+
 </html>
+
+<!-- Some more EVEnts to look for 
+Click event to look for 
+Types , timestamp , defaultprevented()
+target ,toElement , srcElement , CurrentTarget 
+ for interview , ClientX ,  Clienty , Screenx , screenY
+altkey , ctrlKey , SHiftkey , KeyCOde  
+
+Event : Each event is represented by an object that is based on the Event interface,
+and may have additional custom fields and/or functions to provide information about
+what happened.
+
+Timesstamp : This timeStamp is the number of milliseconds elapsed since the time
+ the document was loaded.
+ Timestamps are always in milliseconds.
+ Timestamps derived from Date.now() and event.timeStamp might behave differently:
+ Date.now() is relative to the Unix epoch (Jan 1, 1970).
+ event.timeStamp is relative to when the document was loaded.
+ Understanding and using timestamps effectively is critical for tasks like measuring 
+ performance, scheduling events, or logging activities.
+
+
+2= prevenrdefault():
+The preventDefault() method of the Event interface tells the user agent that if the 
+event does not get explicitly handled, its default action should not be taken 
+as it normally would be.
+The difference between defaultPrevented and preventDefault in JavaScript lies in their purpose and usage in the context of handling events.
+
+preventDefault:
+This is a method of the Event object.
+It is used to prevent the default action of an event from occurring.
+For example, if a form submission or a link click event is triggered,
+calling preventDefault() stops the browser from performing
+its default behavior (like navigating to another page or submitting the form).
+
+
+defaultPrevented:
+This is a property of the Event object.
+It indicates whether preventDefault() was called on the event.
+It returns true if preventDefault() was called, otherwise false.
+Useful for checking if the default action has already been prevented 
+in an event handler.
+
+Target :
+The target property returns the element where the event occured.
+The target property is read-only.
+The target property returns the element on which the event occurred, 
+opposed to the currentTarget property, 
+which returns the element whose event listener triggered the event.
+Difference Between target and currentTarget
+target:
+
+The element that triggered the event (the element the user interacted with).
+
+This might be a child element of the one that has the event listener.
+
+currentTarget:
+
+The element to which the event listener is directly attached.
+
+
+
+1. srcElement
+Purpose: The srcElement property refers to the element that triggered the event. 
+It is non-standard and primarily used in Internet Explorer. For modern browsers,
+ use target instead.
+
+
+ 2. currentTarget
+Purpose: Refers to the element to which the event listener is attached,
+as opposed to the target, which is the element that actually triggered
+the event.
+Scenario: Use currentTarget to ensure you're working with the intended 
+element, even if a child element triggers the event.
+
+
+3.clientX
+Purpose: Represents the horizontal coordinate (x-axis) of the mouse 
+pointer relative to the viewport (visible area of the browser).
+
+Type: Number.
+Scenario: Useful for detecting the mouse's position for interactive components,
+ such as draggable elements.
+
+ 4. clientY
+Purpose: Represents the vertical coordinate (y-axis) of the mouse pointer 
+relative to the viewport.
+Type: Number.
+
+5. screenX
+Purpose: Represents the horizontal coordinate (x-axis) of the mouse 
+pointer relative to the entire screen (including browser window and system UI).
+
+Type: Number.
+
+Scenario: Useful for advanced cases like tracking mouse movements across multiple screens.
+
+6. screenY
+Purpose: Represents the vertical coordinate (y-axis) of the mouse pointer
+ relative to the entire screen.
+
+Type: Number.
+
+Scenario: Similar to screenX, useful for applications needing to understand
+ the mouse's position on the entire screen
+
+ 7. altKey
+Purpose: Indicates whether the Alt key was pressed during an event.
+
+Type: Boolean.
+Scenario: Useful for implementing custom keyboard shortcuts, such as Alt+Key combinations.
+
+8. ctrlKey
+Purpose: Indicates whether the Control key was pressed during an event.
+
+Type: Boolean.
+Scenario: Often used in implementing browser-like shortcuts (e.g., Ctrl+S to save).
+
+9. shiftKey
+Purpose: Indicates whether the Shift key was pressed during an event.
+
+Type: Boolean.
+
+
+10. keyCode
+Purpose: Provides the numeric code of the key pressed during a keydown or keyup event. Deprecated: Use event.key instead.
+
+Type: Number.
+Scenario: Old codebases may use keyCode, but modern applications should use key.
+
+Property	Use Case
+srcElement	Legacy property to identify the event source. Use target instead.
+currentTarget	Ensures the event listener's attached element is identified, not the triggering element.
+clientX/Y	Mouse coordinates relative to the viewport, ideal for DOM interaction and positioning.
+screenX/Y	Mouse coordinates relative to the entire screen, useful in multi-monitor setups.
+altKey	Detects whether the Alt key is pressed for shortcuts or multi-key interactions.
+ctrlKey	Detects whether the Control key is pressed for shortcuts like Ctrl+S.
+shiftKey	Detects whether the Shift key is pressed, often for extended selections.
+keyCode	Deprecated. Use key for identifying key presses.
+-->
