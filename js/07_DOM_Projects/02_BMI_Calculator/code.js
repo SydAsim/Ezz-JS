@@ -12,9 +12,11 @@ form.addEventListener('submit', function (e) {
 
   if (height === '' || height < 0 || isNaN(height)) {
     results.innerHTML = `Please give a valid height ${height}`;
+    return ;
   }
    if (weight === '' || weight < 0 || isNaN(weight)) {
     results.innerHTML = `Please give a valid weight ${weight}`;
+    return ;
   } 
   
     const bmi = (weight / ((height * height) / 10000)).toFixed(2);
@@ -24,7 +26,7 @@ form.addEventListener('submit', function (e) {
 
 
     if (bmi <18.6){
-      message+=`    You are under weight`
+      message+=`  You are under weight`
       
     }
     else if( bmi <= 24.9){

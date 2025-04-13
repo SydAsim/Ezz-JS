@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html Events </title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl"  src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+
+<script>
+// document.getElementById('owl').onclick = function(){
+//     alert("Bird Owl")
+// }
+// THis approach is also good But it gives less features as compare to 
+// addEventListener it can listen to alot of events keyboards keys 
+// mouse click ,drag and drop ,etc 
+// other ways to listen to an Events 
+// J-Query = on 
+// attachEvent()
+    // interveiw question aik aisa image bano jaha pay main click karo thou
+    // mojay time stamp dekhay 
+    // aik aur question jaha par buhut saray div ho aur jahan par client 
+    // click karay waha par circle create ho 
+    
+    // Click event to look for 
+    // Types , timestamp , defaultprevented()
+    // target ,toElement , srcElement , CurrentTarget 
+    //  for interview , ClientX ,  Clienty , Screenx , screenY
+    // altkey , ctrlKey , SHiftkey , KeyCOde  
+
+// document.getElementById('images').addEventListener('click',function(e){
+
+//     console.log("Clicked inside the ul")
+
+// } ,false )  
+// document.getElementById('owl').addEventListener('click',function(e){
+
+//     console.log("Clicked inside the owl")
+//     e.stopPropagation()
+
+// } ,false  ) 
+ 
+    // e is an  Event object  and has many objects in it in which contain 
+    // Further more events  like browser kay events and enviroment kay events
+    // like mouse nay kaha click kia konsi movement thi mouse ke  
+
+    // EventPropagation : (false / true)
+    // Two  context = 1 = Event Bubling deafult false  2= Event Capturing
+    // 1 = Event Bubling deafult false ::
+    // event propagation from the inner to the outside like li-> ul
+    // called bubbling up   
+
+    // 2= Event Capturing :: and top say bottom is called Event capturing 
+    // if we make it true like this 
+    // then pehlay ul capture hoga then li 
+
+// issi tarah Preventdefault kay bhi method hain jo kay us elemnt kay 
+// action ko prevent kar daitha hain 
+// defaultPrevented() method forms kay automatic submission ko rokta hain
+
+// document.getElementById('google').addEventListener('click', function(e){
+//     e.preventDefault()
+//     e.stopPropagation()
+//     console.log("google clicked "); 
+// })
+
+
+// funtion or  method to  remove or images when clicked 
+// Event spell over 
+// document.querySelector('#images').addEventListener('click',function(e){
+//     console.log(e.target.parentNode.tagName);
+
+//     if (e.target.tagName === 'IMG'){
+//     //e.target.parentNode retrieves the parent <li> that wraps the <img>.
+//     let  removeit = e.target.parentNode
+//     removeit.remove() //method  1
+
+//     }
+// removeit.parentNode.removeChild(removeit) //method  2
+// })
+
+
+
+
+// document.querySelector('#images').addEventListener('click', function () {
+//     let div = document.createElement('div');
+//     div.style.borderRadius = '50%'; // Corrected for a circle
+//     div.style.width = '50px'; // Added width for the circle
+//     div.style.height = '50px'; // Added height for the circle
+//     div.style.backgroundColor = 'red'; // Changed to backgroundColor
+//     div.style.position = 'absolute'; // Added positioning
+//     div.style.top = `${event.clientY}px`; // Place the circle at click Y-coordinate
+//     div.style.left = `${event.clientX}px`; // Place the circle at click X-coordinate
+
+//     document.body.appendChild(div); // Append the circle to the body
+// }, false);
+
+
+// Interview POV
+document.querySelector('#images').addEventListener('click', function () {
+    let mydate = new Date();
+    let timeElement = document.createElement('div'); // Create a new div to display the time
+    timeElement.textContent = mydate.toLocaleTimeString();
+    timeElement.style.position = 'absolute'; // Position it dynamically
+    timeElement.style.top = `${event.clientY}px`; // Y-coordinate of the click
+    timeElement.style.left = `${event.clientX}px`; // X-coordinate of the click
+    timeElement.style.backgroundColor = 'rgba(0, 0, 0, 0.5)'; // Add some styling
+    timeElement.style.color = 'white';
+    timeElement.style.padding = '5px';
+    timeElement.style.borderRadius = '5px';
+
+    document.body.appendChild(timeElement);
+
+    // Optional: Remove the time display after 3 seconds
+    setTimeout(() => {
+        timeElement.remove();
+    }, 3000);
+});
+
+
+
+</script>
+</html>

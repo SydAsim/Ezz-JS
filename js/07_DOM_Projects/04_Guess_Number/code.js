@@ -10,8 +10,8 @@ const startOver  = document.querySelector('.resultParas')
 
 const  p = document.createElement('p')
 
-let  prevGuess = []
-let  numGuess =  1
+let  prevGuess = [] // array to store preivious Guesses
+let  numGuess =  1 // number of guess made so far
 
 let playGame = true 
 
