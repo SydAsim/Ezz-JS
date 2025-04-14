@@ -60,6 +60,7 @@ console.log(user1)
 console.log(user2) //so changes occurs in the copy of the user1 and the orginal user1 
 //reamains the same 
 
+// heap Example
 let userdetails1 = {
     username : "Ahmed",
     user_id  : 317,
