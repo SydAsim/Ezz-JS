@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>File three of js</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+const myDate  = function(str){
+    console.log(str,"asim", Date.now());
+}
+
+// const intervalid = setInterval(myDate,1000,"hi");
+// clearInterval(intervalid)
+
+let intervalid ;
+document.querySelector('#start').addEventListener('click',function(){
+        if (!intervalid){
+        console.log("Event started");
+        intervalid = setInterval(myDate,1000,"hi");
+        }
+    }
+)
+
+
+// to click on stop the event will stop 
+document.querySelector('#stop').addEventListener('click', function(){
+        if(intervalid){
+        console.log("Event Stopped");
+        clearInterval(intervalid)
+        intervalid = null
+        }
+    }
+)
+</script>
+</html>
