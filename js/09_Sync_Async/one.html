@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sync and Async in JavaScript</h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+// setTimeout() method which also call the api
+// aik bar time do aur aik bar main us kok excute karonga 
+let name  = function(){
+    console.log("asim");
+}
+// setTimeout(name ,3000)
+
+const chnageh1 = function() {
+    document.querySelector('h1').
+    innerHTML=('Day 39 of learning js');
+}
+// setTimeout(chnageh1,3000)
+
+const chnageme = setTimeout(chnageh1,2000);
+document.querySelector('#stop').
+addEventListener('click',function(){
+    clearTimeout(chnageme)
+    console.log('Stoppedd')
+})
+</script>
+</html>
