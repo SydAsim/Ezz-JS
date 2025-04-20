@@ -130,7 +130,6 @@ consumPromisefive()
 
 fetch("https://api.github.com/users/sydasim")
 .then((response)=>{
-
 return response.json()
 })
 .then((data)=>{
@@ -138,5 +137,4 @@ return response.json()
 })
 .catch((error)=>{
     console.log(error);
-    
 })
