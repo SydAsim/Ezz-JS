@@ -17,6 +17,7 @@ collections of Properties and methods
 - toLowercase etc Promises 
 
 #  why use OOP?
+to systimatically arrange our code and avoid spaghatti code 
 
 # parts of OOP 
 - object literals {}

@@ -30,6 +30,7 @@ const user =  {
 
 
 function UserOne(username , roll , isloggIn){
+    // this means current context ka username
     this.username = username;
     this.roll = roll;
     this.isloggIn = isloggIn;
@@ -54,7 +55,7 @@ const u2 = UserOne("Awais" , 231318 , false)
 // console.log(u1);   // both will get these values ("Awais" , 231318 , false)
 // console.log(u2);
 
-// Now remeber thats why we new key word cause it gives us the copy of that instance 
+// Now remeber thats why we ***new*** key word cause it gives us the copy of that instance 
 // where we can play with that specific copy of the instance 
 
 const u3 = new UserOne ("khan" , 121 ,true)

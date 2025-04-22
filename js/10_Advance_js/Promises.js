@@ -35,7 +35,7 @@ new Promise (function(resolve ,reject){
 })
 
 // now we will pass paramete maybe object or array or ftns  in the 
-// resolve and we can access it in the consumption then 
+// resolve and we can access it in the consumption .then 
 const PromisThree = new Promise(function(resolve, reject){
     setTimeout( function(){
         resolve({user:"Asim",email:"syedasime2021@gmail.com",cnt:"023223"})
