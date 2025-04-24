@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clousure</title>
+</head>
+<body style="background-color: black;">
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+</body>
+<script>
+    // Lexical Scoping when child ftn has access to the parent functions
+    // variable etc but child cannot share there variables etc
+    // function init(){
+    //     let name = "Mozilla"
+    //     function displayName(){
+    //         let pass = "12hssd"
+    //         console.log("inner",name);
+    //     }
+    //     function displayNametwo(){
+    //         // console.log(pass);
+            
+    //     }
+    //     displayName();
+    // }
+    // init()
+    // console.log("Outer",name);
+
+    // ```````````Closure Scoping ``````````
+    function myftn(){
+        let name = "asim"
+        function dispName(){
+            console.log(name);
+        }
+        return dispName;//thosu siraf dispNmae() nahi return hogi balkay poray ka pora lexcial scope return ho kay jaigi 
+        // mtlba ya hai closure ka jab hum ftn return kartay hain thou pora ka pora scope return hota hain siraf scope nahi balkay 
+        // poray ka pora Lexcial Scope 
+    }
+    const ftn = myftn()
+    ftn()
+    
+    
+</script>
+<script>
+    // document.getElementById('orange').onclick = function(){
+    //     document.body.style.backgroundColor = 'orange'
+    // }
+    // document.getElementById('green').onclick = function(){
+    //     document.body.style.backgroundColor = 'green'
+    // }
+// but if the buttons are 100s of thousand then we dont want repitive work 
+// simply we will make a function
+   function clickhandler (color){
+    // document.body.style.backgroundColor = `${color}`
+    return function (){
+        document.body.style.backgroundColor = `${color}`
+    }
+
+   }
+
+//    we have give clickhandler() referene(means only i am giving definition of the function) 
+   document.getElementById('orange').onclick = clickhandler("orange")
+   document.getElementById('green').onclick = clickhandler("green")
+//    but i want the function it self not the direct chnage value
+
+
+</script>
+</html>
