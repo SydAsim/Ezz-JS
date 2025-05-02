@@ -4,6 +4,7 @@ const form = document.querySelector('form');
 
 form.addEventListener('submit', function (e) {
  // so e.preventDefault jo hain woh default actions koprevent kartha hain
+//  jaisa kay default form submission
   e.preventDefault();
 
   const height = parseInt(document.querySelector('#height').value);
@@ -34,8 +35,10 @@ form.addEventListener('submit', function (e) {
       
     }
     else{
-      message+= `   You are Over weight   `
+      message+= `You are Over weight   `
   }
+  // so after the above coditions one codition might met. and it will be 
+  // given to the result 
   results.innerHTML = message
 });
 

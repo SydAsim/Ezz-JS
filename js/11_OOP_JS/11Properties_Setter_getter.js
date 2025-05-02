@@ -22,7 +22,6 @@ function user(email , pass) {
             this.pass=value
         }
     })
-
 }
 const chai = new user("23123123","dfiuewgu30871")
 console.log(chai.email);

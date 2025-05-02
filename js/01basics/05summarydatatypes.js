@@ -20,6 +20,7 @@ console.log(typeof variable_undefined);//havenot assigned any value to it
 
 
 // // JAVA SCRIPT  DYNAMICALLY TYPED  LANGUAGE
+// we do not specify the datatype it on the run time assumes it 
 // const score = 100
 // const score_points = 99.9
 // const islogged_in = true

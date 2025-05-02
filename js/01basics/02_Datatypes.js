@@ -1,4 +1,5 @@
-"use strict" ;//keyword for the telling the Engine node-js to use latest version but modern Environments already uses latest versions
+"use strict" ;//keyword for the telling the Engine node-js 
+// to use latest version but modern Environments already uses latest version
 
 //alert(3+3) only acceptable in browser and we are using node js
 console.log("King Briyani")

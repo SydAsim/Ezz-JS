@@ -19,7 +19,6 @@ if(playGame){
     submit.addEventListener('click' ,function(e){
         e.preventDefault()
         const guess = parseInt(userInput.value)
-        console.log(guess); 
         // pass the guess value to the validateGuess ftn 
         validateGuess(guess)
     });
@@ -34,7 +33,7 @@ function validateGuess(guess){
         alert('Please enter a number Greater than 1 ')
     }
     else if(guess > 100 ){
-        alert('Please enter a number lessor than 100')
+        alert('Please enter a number lesser than 100')
     }
     else{
         prevGuess.push(guess)
@@ -70,7 +69,7 @@ function checkGuess(guess){
 // clean the guess yani dosaray number ka liye 
 // and the prev guess and the remaing guess changes
 function displayGuess(guess){
-    userInput.value = '' //clean it up
+    userInput.value = '' //clean it up for another guaess 
     guessSlot.innerHTML += `${guess}  ` //push tthe values to display
     numGuess++ ; // increment the numGuess
     remaining.innerHTML = `${12 - numGuess}`// Update remaining guesses

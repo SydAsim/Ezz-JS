@@ -1,5 +1,22 @@
-const coding = ["python" ,"Js", "cpp" ,"Ruby" ,"Go"]
+// Why Use filter Instead of forEach for Filtering?
+// Purpose-Built:
+// filter is designed specifically for creating a new array based on a condition.
+// Using it improves code clarity and readability.
 
+// Less Code:
+// With filter, there’s no need to manually manage a new array (evenNumbers in the example above).
+
+// Immutable:
+// filter ensures that the original array remains untouched, adhering to functional programming principles.
+
+// Chainability:
+// filter can be chained with other methods like map or reduce. For example:
+
+// const result = numbers.filter((num) => num % 2 === 0).map((num) => num * 2);
+// console.log(result); // Outputs: [4, 8]
+
+
+const coding = ["python" ,"Js", "cpp" ,"Ruby" ,"Go"]
 const values = coding.forEach( (item)=>{
     // console.log(item);
 })
@@ -45,6 +62,7 @@ const books = [
     { title: 'Book Nine', genre: 'Non-Fiction', publish: 1981, edition: 1989 },
   ];
 
+//   just like we have studied chaining is allowed in filter 
 let mybook = books.filter( (bk) => bk.genre === 'History' && bk.publish ===  1986)
 // console.log(mybook);
 mybook = books.filter((bk) => { return bk.publish > 1995})
@@ -74,7 +92,7 @@ let total = a1.reduce(function (acc ,curval) {
    return  acc+curval
 
 }, 0 )//0 means the intial val is 0 
-// console.log(total);
+console.log(total);
 
 let shoppingcart  = [
     {

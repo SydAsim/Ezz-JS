@@ -41,12 +41,13 @@ console.log(url.replace('%20','--'))
 //also if we want to find somthing in the string then we use include method 
 console.log(url.includes("hitesh"))
 
-//if we want to convert any string in array  based on any thing present in the array we use Split 
+//if we want to convert any string in array  based on
+//  any thing present in the array we use Split 
 
 const  bobby = "King-is-back"
 console.log(bobby.split('-'));
 console.log(bobby.at(3));
-// console.log(bobby.charCodeAt(3)); Returns the Unicode value of the character at the specified index.
+// console.log(bobby.charCodeAt(3));Returns the Unicode value of the character at the specified index.
 
 // 128522
 console.log("😊".codePointAt(0));
@@ -85,7 +86,8 @@ console.log( "hello".replaceAll("l", "w"))// "hewwo replaces all the word
 // Your application supports multiple languages.
 // You want to ensure correct text processing for users in specific locales.
 // Locale-Specific Behavior (Turkish Example)
-// In Turkish, the uppercase "I" has a different lowercase equivalent than in English
+// In Turkish, the uppercase "I" has a different lowercase
+//  equivalent than in English
 
 const turkishText = "Istanbul";
 console.log(turkishText.toLowerCase());// "istanbul" (English default)

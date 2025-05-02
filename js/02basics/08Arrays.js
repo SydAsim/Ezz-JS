@@ -34,8 +34,8 @@ const newarr = arr.join() //chnages the types into string
 
 // Slice and Splice 
 const arr01 = arr.slice(1 ,3)
-// console.log("A",arr)
-// console.log (arr01)
+console.log("A",arr)
+console.log (arr01)
 
 
 const arr02 = arr.splice(1, 3)
@@ -54,10 +54,11 @@ const dc_heros = ["superman" , "flash" , "batman"]
 
 // We can also use concat
 const narr = marvel_heros.concat(dc_heros)
-// console.log(narr);
-// console.log(narr[4]);
+console.log(narr);
+console.log(narr[4]);
 
-// spread operation is just like taking a glass a droping it to break down into many pieces
+// spread operation is just like taking a glass a droping it to break down into many pieces so by (...) we can join any arrays 
+
 const new_heros = [...marvel_heros  , ...dc_heros]
 // console.log(new_heros);
 
@@ -65,7 +66,7 @@ const another_arr = [1 ,2 ,3 ,4 ,[5,6,7],8,9 ,[10 ,20 ,30 ,[40 , 50 ,60,70] ,99 
 console.log(another_arr.flat(2))
 
 // form keyword
-// console.log(Array.isArray("asim"))
+console.log(Array.isArray("asim"))// chcks is an object is an array form
 console.log(Array.from("asim"))
 
 console.log(Array.from({name:"asim"})) // it always return an empty array casue it do not know 

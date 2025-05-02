@@ -1,5 +1,5 @@
 // Singleton ->> only created in Constructor like 
-// Object.create
+// Object.create const myobj = Object.create();
 
 
 // Object Literals 
@@ -13,7 +13,7 @@ const  JSobj = {
     RollNo: 17 ,
     class: "BS-SE-A",
     email: "syedasim2021@apple.com",
-    lastloggedin: ["Monday" ,"Tuesday" , "Wednesday"]
+    lastloggedin: ["Monday" ,"Tuesday" , "Wednesday"],
 }
 // console.log(JSobj.name);
 // // other method to access data of obj 
@@ -38,7 +38,6 @@ JSobj.greetings = function() {
 JSobj.greetingstwo = function() {
     console.log(`Welcome to jscript , ${this.name}`); // String interpulation
 }
-
 // Invoking method
 // console.log(JSobj.greetings())
 // console.log(JSobj.greetingstwo())
@@ -71,13 +70,15 @@ const newuser = {
 const target = {1: "a" , 2: "b" }
 const src1 = {3: "a" , 4: "b" }
 const src2 = {5: "a" , 6: "b" }
+
+
 // const res = {target ,src1 , src2} same problem as in array so not good
 
 // empty {} object means that if we are returning the merge object then 
 // why not store in seprate object so adding more sources or objects will
 // go to the {empty object not just specfic target} again optional step 
 const res = Object.assign({}, target , src1 , src2)
-// console.log(res);
+console.log(res);
 // if {extra object{} used then flase else true} 
 // console.log(target === res); // false
 
@@ -102,9 +103,9 @@ const userdata = [
 // console.log(userdata[1].id);
 // console.log(userdata[1].name);
 
-// console.log(Object.keys(JSobj));
-// console.log(Object.values(JSobj));
-// console.log(Object.entries(JSobj)); //har key value pairs ko array main show karya ga 
+console.log(Object.keys(JSobj));
+console.log(Object.values(JSobj));
+console.log(Object.entries(JSobj)); //har key value pairs ko array main show karya ga 
 
 //console.log(JSobj.hasOwnProperty('email'));//chks id specfic property exists 
 // in an object or not 
@@ -119,9 +120,11 @@ const course =  {
     instructorname: "asim"
 }
 
+// The instructorname: teacher part specifies that you want to take the instructorname property from the object and rename it to teacher in your local scope.
 // console.log(course.instructorname);
 const { instructorname : teacher} = course
 // console.log(instructorname); //ReferenceError: instructorname is not defined
+// this works cause teacher is the new variable holding asim 
 console.log(teacher);
 
 // this is called de structuring same concept used in React 

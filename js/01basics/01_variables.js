@@ -10,7 +10,9 @@ userdesign = "AC"
 user_dob 
 
 /*userid = 2 this wont work cause it is already declared as const
--->> ALso we can not use the  var keyword the variable will change if we declare var a = 10 at line 4 and then declare var a= 90 in line 10 then it will change the a at line 4 chnages 
+-->> ALso we can not use the  var keyword the variable will change i
+f we declare var a = 10 at line 4 and then declare var a= 90 in line 
+10 then it will change the a at line 4 chnages 
 occur in code also bz of block scope and functional scope
 */
 console.log(userdesign);

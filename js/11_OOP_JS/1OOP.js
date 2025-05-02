@@ -35,7 +35,7 @@ function UserOne(username , roll , isloggIn){
     this.roll = roll;
     this.isloggIn = isloggIn;
     this.getuserdetail = function(){
-        console.log(`This is user name ${this.getuserdetail()}`);
+        console.log(`This is user name ${this.username()}`);
         
     }
 

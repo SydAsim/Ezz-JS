@@ -44,6 +44,7 @@ function loginuserMessage(username = "sam"){
 // console.log(loginuserMessage("asim"))
 
 // ...numb1 is rest operator spread bhi bholtahy hain issay 
+
 function calculatecartPrice (val1 , val2 , ...numb1){
     return numb1
 }
@@ -55,6 +56,7 @@ const user  =  {
      username :"asim" ,
      price : "100" 
 }
+// anyobject is the keyword where then you can pass any object
 function hadleobject(anyobject){
     console.log(`Username is ${anyobject.username}
      and price is : ${anyobject.price}`);

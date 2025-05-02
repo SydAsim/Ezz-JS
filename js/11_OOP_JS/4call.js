@@ -1,8 +1,7 @@
 const SetUsername  =  function (username){
     // Complex DB call
     this.username = username;
-    console.log("SetUsername Called");
-    
+    console.log("SetUsername Called"); 
 }
 
 

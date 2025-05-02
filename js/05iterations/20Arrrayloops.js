@@ -1,9 +1,8 @@
-// For each loop most used loop of built in with in array we use to 
-// access the key values of an array 
-// Performs the specified action for each element in an array.
+// for each loop provides additional function so that we can play witht the 
+// array Returns: undefined; it does not create a new array.
+// Best for: When you want to execute some logic for each element in the array, such as logging, updating, or performing actions.
 
-// @param callbackfn — A function that accepts up to three arguments.
-// forEach calls the callbackfn function one time for each element in the array.
+
 
 
 // acha function aur arrow function main variables kay name kuch bhihosakatahy 
@@ -50,5 +49,5 @@ let mynewarr = [
 // see just by declaring variable name item or any other name
 // we can access all the properties of object in 1 loop
 mynewarr.forEach(  (item)=> { 
-    // console.log(item.Langname);
-}  )
+    console.log(item);
+})

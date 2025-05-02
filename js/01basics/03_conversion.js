@@ -1,22 +1,22 @@
-//  let score = "43abc"
-// // console.log(typeof score)
-// // console.log(typeof (score))//using method 
+ let score = "43abc"
+// console.log(typeof score)
+// console.log(typeof (score))//using method 
 
-// // //but i want the score in number so we can convert it 
-// let scoreinnumber = Number (score)
-// console.log(typeof scoreinnumber) //convert thou hogayae lakin 
-// console.log(scoreinnumber)//actually main wo NaN hain means Not a number 
-// //33 => 33
-// //"33adsd" => NaN
-// //true => 1 false=> 0 
+// //but i want the score in number so we can convert it 
+let scoreinnumber = Number (score)
+console.log(typeof scoreinnumber) //convert thou hogayae lakin 
+console.log(scoreinnumber)//actually main wo NaN hain means Not a number 
+//33 => 33
+//"33adsd" => NaN
+//true => 1 false=> 0 
 
 
-// let name = "king"
-// let changeanme = Boolean(name) 
-// console.log(changeanme)
-// //1=> true 
-// //0=> false 
-// //"king"=> true 
+let name = "king"
+let changeanme = Boolean(name) 
+console.log(changeanme)
+//1=> true 
+//0=> false 
+//"king"=> true 
 
 // let num = 23
 // let stringnum = String(num)

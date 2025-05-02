@@ -4,7 +4,7 @@ const body = document.querySelector("body")
 buttons.forEach(function (button) {
     console.log(button)
     button.addEventListener( 'click' ,function(e){
-    // e is evernt object and is just variable name can be anthing
+    // e is event object and is just variable name can be anthing
         console.log(e)
 // e.target means ya event a kaha say raha hain
         console.log(e.target);
@@ -14,7 +14,7 @@ buttons.forEach(function (button) {
         }
 
         if(e.target.id ==='white'){
-            body.style.backgroundColor = e.target.id //or "grey"
+            body.style.backgroundColor = "white" //or "white"
         }
 
         if(e.target.id ==='blue'){

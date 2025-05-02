@@ -43,16 +43,16 @@
     
 </script>
 <script>
-    // document.getElementById('orange').onclick = function(){
-    //     document.body.style.backgroundColor = 'orange'
-    // }
-    // document.getElementById('green').onclick = function(){
-    //     document.body.style.backgroundColor = 'green'
-    // }
+    document.getElementById('orange').onclick = function(){
+        document.body.style.backgroundColor = 'orange'
+    }
+    
+    document.getElementById('green').onclick = function(){
+        document.body.style.backgroundColor = 'green'
+    }
 // but if the buttons are 100s of thousand then we dont want repitive work 
 // simply we will make a function
    function clickhandler (color){
-    // document.body.style.backgroundColor = `${color}`
     return function (){
         document.body.style.backgroundColor = `${color}`
     }
@@ -65,5 +65,22 @@
 //    but i want the function it self not the direct chnage value
 
 
+
 </script>
 </html>
+<!-- What is a Closure?
+A closure is a combination of:
+A function.
+The lexical environment in which that function was declared.
+This means a function remembers the variables and scope it had access to when it was created, even if it's executed outside that scope.
+Key Characteristics
+Access Parent Scope: A closure allows a function to access variables from its outer scope, even after the outer function has finished execution.
+Persistence: Variables inside the closure "persist" across function calls.
+
+Lexical Environment
+The lexical environment is a concept that defines how variable scopes are resolved during code execution. It consists of two main parts:
+Environment Record: Stores all the variables and functions declared in the current scope.
+Outer Lexical Environment Reference: A reference to the parent (outer) lexical environment.
+
+
+-->

@@ -8,6 +8,9 @@
 })();
 // yay dono ftns excute hongay magar isko pata nahi hain kay context rokna kaha hain that why 
 // we use (;)
+(function chai(){
+console.log("welcome to the IIFE");
+})();
 
 // through arrow ftn 
 //parameter name or anything

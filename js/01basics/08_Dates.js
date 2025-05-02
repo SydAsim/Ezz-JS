@@ -32,7 +32,7 @@ console.log(newDate.getFullYear())
 console.log(newDate.getHours())
 console.log(newDate.getMilliseconds())
 console.log(newDate.getTimezoneOffset())
-console.log(newDate.get())
+// console.log(newDate.get())
 
 // if you want to define more the toLocaleString then u can do it 
 console.log(newDate.toLocaleString('default', {
